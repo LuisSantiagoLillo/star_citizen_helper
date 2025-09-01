@@ -10,7 +10,7 @@ function switchTab(tabId) {
     document.querySelector(`.tab[onclick="switchTab('${tabId}')"]`).classList.add('active');
 }
 
-// Función de simulación de teclas
+// Key press simulation function
 function sendKeyPress(key) {
     fetch('/simulate_key', {
         method: 'POST',

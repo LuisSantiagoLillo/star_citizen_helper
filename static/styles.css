@@ -7,9 +7,9 @@
             color: #ffffff;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Cambiado de center a flex-start */
+            align-items: flex-start; /* Changed from center to flex-start */
             min-height: 100vh;
-            overflow-y: auto; /* Cambiado de hidden a auto */
+            overflow-y: auto; /* Changed from hidden to auto */
         }
 
         .interface {
@@ -21,7 +21,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la pantalla */
+            min-height: 100vh; /* Ensures content is at least full viewport height */
         }
 
         /* Tabs */
