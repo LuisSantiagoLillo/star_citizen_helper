@@ -1,11 +1,20 @@
-Instal requirements:
-pip install -r requirements.txt
+For the complete documentation, see README.md.
 
-Execute with:
-sudo .venv/bin/python3 server.py
+Quick start:
 
-Kill portserver:
-kvothe@kvothe-ruh:~/Code/star_citicen_helper$ sudo lsof -i :5000
-COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-python3 5958 root    3u  IPv4  37790      0t0  TCP *:5000 (LISTEN)
-kvothe@kvothe-ruh:~/Code/star_citicen_helper$ sudo kill -9 5958
+1) Create venv and install requirements:
+   python3 -m venv .venv
+   . .venv/bin/activate
+   pip install -r requirements.txt
+
+2) Run the templated server (recommended):
+   sudo .venv/bin/python3 sc_buttons_server.py
+
+   Or run the inline-HTML version:
+   sudo .venv/bin/python3 server.py
+
+3) Open http://localhost:5000 (or your host IP:5000) in a browser.
+
+Troubleshooting port 5000:
+   sudo lsof -i :5000
+   sudo kill -9 <PID>
