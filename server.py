@@ -18,7 +18,7 @@ def simulate_key():
     if key:
         try:
             keyboard.press_and_release(key)
-            # return jsonify({"message": f"Key '{key}' simulated successfully."})
+            return jsonify({"message": f"Key '{key}' simulated successfully."})
         except Exception as e:
             return jsonify({"message": f"Error simulating key: {e}"}), 500
     else:
