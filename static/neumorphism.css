@@ -1,0 +1,50 @@
+/* Neumorphism-inspired utility styles (dark theme) */
+:root {
+  --neu-bg: #0d141a;
+  --neu-shadow-dark: #070b0e;
+  --neu-shadow-light: #141e27;
+  --neu-radius: 14px;
+  --neu-distance: 8px;
+  --neu-blur: 16px;
+}
+
+.neu-surface {
+  background: var(--neu-bg);
+  border-radius: var(--neu-radius);
+  box-shadow:
+    calc(var(--neu-distance)) calc(var(--neu-distance)) var(--neu-blur) var(--neu-shadow-dark),
+    calc(var(--neu-distance) * -1) calc(var(--neu-distance) * -1) var(--neu-blur) var(--neu-shadow-light);
+}
+
+.neu-inset {
+  background: var(--neu-bg);
+  border-radius: var(--neu-radius);
+  box-shadow:
+    inset calc(var(--neu-distance)) calc(var(--neu-distance)) var(--neu-blur) var(--neu-shadow-dark),
+    inset calc(var(--neu-distance) * -1) calc(var(--neu-distance) * -1) var(--neu-blur) var(--neu-shadow-light);
+}
+
+.neu-button {
+  background: var(--neu-bg);
+  border: 0;
+  border-radius: 12px;
+  box-shadow:
+    6px 6px 12px var(--neu-shadow-dark),
+    -6px -6px 12px var(--neu-shadow-light);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neu-button:hover {
+  transform: translateY(-1px);
+}
+
+.neu-button:active {
+  box-shadow:
+    inset 6px 6px 12px var(--neu-shadow-dark),
+    inset -6px -6px 12px var(--neu-shadow-light);
+  transform: translateY(0);
+}
+
+/* Optional helper for card-like sections */
+.neu-card { @apply .neu-surface; }
+

@@ -6,9 +6,11 @@
     <title>Futuristic Interface</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- CSS -->
+    <!-- Neumorphism-inspired styles (local). Neumorphism.io is a generator, not a CDN. -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='neumorphism.css') }}">
 </head>
 <body>
-    <div class="interface">
+    <div class="interface neu-surface">
         <!-- Tabs -->
         <div class="tabs">
             <div class="tab active" onclick="switchTab('core')">Core Interface</div>
@@ -19,36 +21,36 @@
         <!-- Core Interface -->
         <div id="core" class="tab-content active">
             <div class="panel-core">
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Doors</h2>
-                    <button class="button" onclick="sendKeyPress('a')">Open Doors</button>
-                    <button class="button" onclick="sendKeyPress('a')">Close Doors</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Open Doors</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Close Doors</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Mobiglass</h2>
-                    <button class="button" onclick="sendKeyPress('F1')">F1</button>
-                    <button class="button" onclick="sendKeyPress('F2')">F2</button>
-                    <button class="button" onclick="sendKeyPress('F3')">F3</button>
-                    <button class="button" onclick="sendKeyPress('F4')">F4</button>
-                    <button class="button" onclick="sendKeyPress('F5')">F5</button>
-                    <button class="button" onclick="sendKeyPress('F6')">F6</button>
-                    <button class="button" onclick="sendKeyPress('F7')">F7</button>
-                    <button class="button" onclick="sendKeyPress('F8')">F8</button>
-                    <button class="button" onclick="sendKeyPress('F9')">F9</button>
-                    <button class="button" onclick="sendKeyPress('F10')">F10</button>
-                    <button class="button" onclick="sendKeyPress('F11')">F11</button>
-                    <button class="button" onclick="sendKeyPress('F12')">F12</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F1')">F1</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F2')">F2</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F3')">F3</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F4')">F4</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F5')">F5</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F6')">F6</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F7')">F7</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F8')">F8</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F9')">F9</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F10')">F10</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F11')">F11</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F12')">F12</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Lights</h2>
-                    <button class="button" onclick="sendKeyPress('a')">On</button>
-                    <button class="button" onclick="sendKeyPress('a')">Off</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">On</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Off</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Docking / Landing</h2>
-                    <button class="button" onclick="sendKeyPress('n')">Landing Gear - N</button>
-                    <button class="button" onclick="sendKeyPress('d')">Docking Camera - D</button>
-                    <button class="button" onclick="sendKeyPress('k')">Vtol - K</button>
+                    <button class="button neu-button" onclick="sendKeyPress('n')">Landing Gear - N</button>
+                    <button class="button neu-button" onclick="sendKeyPress('d')">Docking Camera - D</button>
+                    <button class="button neu-button" onclick="sendKeyPress('k')">Vtol - K</button>
                 </div>
             </div>
         </div>
@@ -58,17 +60,17 @@
             <div class="panel-shields">
                 <div class="ship-container">
                     <div class="ship-image"></div>
-                    <div class="ship-controls">
-                        <button class="button" onclick="sendKeyPress('a')">Top</button>
-                        <button class="button" onclick="sendKeyPress('a')">Left</button>
-                        <button class="button" onclick="sendKeyPress('a')">Right</button>
-                        <button class="button" onclick="sendKeyPress('a')">Bottom</button>
+                <div class="ship-controls">
+                        <button class="button neu-button" onclick="sendKeyPress('a')">Top</button>
+                        <button class="button neu-button" onclick="sendKeyPress('a')">Left</button>
+                        <button class="button neu-button" onclick="sendKeyPress('a')">Right</button>
+                        <button class="button neu-button" onclick="sendKeyPress('a')">Bottom</button>
                     </div>
                 </div>
                 <div class="energy-controls">
-                    <button class="button" onclick="sendKeyPress('a')">Energy A</button>
-                    <button class="button" onclick="sendKeyPress('a')">Energy B</button>
-                    <button class="button" onclick="sendKeyPress('a')">Energy C</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Energy A</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Energy B</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Energy C</button>
                 </div>
             </div>
         </div>
@@ -76,38 +78,38 @@
         <!-- Battle Mode -->
         <div id="communications" class="tab-content">
             <div class="panel-core">
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Shields</h2>
-                    <button class="button" onclick="sendKeyPress('a')">Button</button>
+                    <button class="button neu-button" onclick="sendKeyPress('a')">Button</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Countermeasures</h2>
-                    <button class="button" onclick="sendKeyPress('h')">Decoy Burst - H</button>
-                    <button class="button" onclick="sendKeyPress('j')">Noise - J</button>
+                    <button class="button neu-button" onclick="sendKeyPress('h')">Decoy Burst - H</button>
+                    <button class="button neu-button" onclick="sendKeyPress('j')">Noise - J</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Power</h2>
-                    <button class="button" onclick="sendKeyPress('F5')">Increase weapons - F5</button>
-                    <button class="button" onclick="sendKeyPress('F6')">Increase engines - F6</button>
-                    <button class="button" onclick="sendKeyPress('F7')">Increase shields - F7</button>
-                    <button class="button" onclick="sendKeyPress('F9')">Increase ship power - F9</button>
-                    <button class="button" onclick="sendKeyPress('F10')">Decrease ship power - F10</button>
-                    <button class="button" onclick="sendKeyPress('F8')">Reset - F8</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F5')">Increase weapons - F5</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F6')">Increase engines - F6</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F7')">Increase shields - F7</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F9')">Increase ship power - F9</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F10')">Decrease ship power - F10</button>
+                    <button class="button neu-button" onclick="sendKeyPress('F8')">Reset - F8</button>
                 </div>
-                <div class="section">
+                <div class="section neu-surface">
                     <h2>Targeting</h2>
-                    <button class="button" onclick="sendKeyPress('G')">Cycle assisted/standard and locked gimbal - G</button>
-                    <button class="button" onclick="sendKeyPress('T')">Cycle in view targets - T</button>
-                    <button class="button" onclick="sendKeyPress('T')">Auto targeting - T</button>
-                    <button class="button" onclick="sendKeyPress('4')">Cycle attackers - 4</button>
-                    <button class="button" onclick="sendKeyPress('5')">Cycle hostiles - 5</button>
-                    <button class="button" onclick="sendKeyPress('6')">Cycle fiendlies - 6</button>
-                    <button class="button" onclick="sendKeyPress('7')">Cycle all - 7</button>
-                    <button class="button" onclick="sendKeyPress('8')">Cycle sub target - 8</button>
-                    <button class="button" onclick="sendKeyPress('1')">Pinned selected target 1 - 1</button>
-                    <button class="button" onclick="sendKeyPress('2')">Pinned selected target 2 - 2</button>
-                    <button class="button" onclick="sendKeyPress('3')">Pinned selected target 3 - 3</button>
-                    <button class="button" onclick="sendKeyPress('0')">Remove all pins - 0</button>
+                    <button class="button neu-button" onclick="sendKeyPress('G')">Cycle assisted/standard and locked gimbal - G</button>
+                    <button class="button neu-button" onclick="sendKeyPress('T')">Cycle in view targets - T</button>
+                    <button class="button neu-button" onclick="sendKeyPress('T')">Auto targeting - T</button>
+                    <button class="button neu-button" onclick="sendKeyPress('4')">Cycle attackers - 4</button>
+                    <button class="button neu-button" onclick="sendKeyPress('5')">Cycle hostiles - 5</button>
+                    <button class="button neu-button" onclick="sendKeyPress('6')">Cycle fiendlies - 6</button>
+                    <button class="button neu-button" onclick="sendKeyPress('7')">Cycle all - 7</button>
+                    <button class="button neu-button" onclick="sendKeyPress('8')">Cycle sub target - 8</button>
+                    <button class="button neu-button" onclick="sendKeyPress('1')">Pinned selected target 1 - 1</button>
+                    <button class="button neu-button" onclick="sendKeyPress('2')">Pinned selected target 2 - 2</button>
+                    <button class="button neu-button" onclick="sendKeyPress('3')">Pinned selected target 3 - 3</button>
+                    <button class="button neu-button" onclick="sendKeyPress('0')">Remove all pins - 0</button>
                 </div>
             </div>
         </div>
