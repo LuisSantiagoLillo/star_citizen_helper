@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Star Citizen Helper
+Comment=Start the local Star Citizen control panel
+Exec=/home/kvothe/Code/star_citicen_helper/scripts/start-server.sh
+Icon=input-keyboard
+Terminal=true
+Categories=Game;
+StartupNotify=false
